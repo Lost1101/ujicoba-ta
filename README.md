@@ -4,6 +4,7 @@
 - just yolov8 (small ver)
 - 98.88% acc
 - tapi deteksi betumpuk antara mi aceh & spageti wow
+- 500 ms inference
 
 2.11.2024 :
 - Pure bounding box
@@ -14,3 +15,4 @@
 - File gabisa dibuka krn terlalu besar lol, next dipisah2 filenya
 - Overfitting or model confused(?)
 - Should I fine-tuning it? 🤔
+- 480 ms inference
