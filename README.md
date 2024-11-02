@@ -11,3 +11,4 @@
 - yolov8 + msrcr (multi scale retinex + color restoration)
 - 97% acc
 - masih deteksi betumpuk antara mi aceh & spageti wow, malah spageti wow akurasi kecil saat scan 1 object langsung
+- File gabisa dibuka krn terlalu besar lol, next dipisah2 filenya
