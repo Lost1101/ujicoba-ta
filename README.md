@@ -16,3 +16,6 @@
 - Overfitting or model confused(?)
 - Should I fine-tuning it? 🤔
 - 480 ms inference
+
+5.11.2024 :
+- next add multiple object in one feature
