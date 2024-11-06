@@ -19,3 +19,6 @@
 
 5.11.2024 :
 - next add multiple object in one feature
+
+6.11.2024 :
+- Ganti metode, on process yolo NAS
