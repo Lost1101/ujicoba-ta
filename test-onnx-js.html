@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="file" id="imageInput" accept="image/*" onchange="uploadImage()"> <!-- Memicu uploadImage saat file dipilih -->
+    <canvas id="canvas" width="640" height="640" style="display: none;"></canvas>
+
+    <script>
+        async function uploadImage() {
+            const fileInput = document.getElementById('imageInput'); // Ubah ke 'imageInput'
+            if (!fileInput.files[0]) {
+                alert("Please select an image!");
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append("image", fileInput.files[0]);
+
+            try {
+                const response = await fetch('http://localhost:3000/upload-image', {
+                    method: 'POST',
+                    body: formData
+                });
+                const result = await response.json();
+                console.log("Detection Result:", result);
+            } catch (error) {
+                console.error("Error uploading image:", error);
+            }
+        }
+    </script>
+</body>
+</html>
